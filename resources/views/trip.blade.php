@@ -23,9 +23,9 @@
 
         <div class="row">
             @foreach ($allTrips as $trip)
-                <div class="col-sm-12 col-md-6 col-xl-4  d-flex align-items-stretch">
+                <div class="col-sm-12 col-md-6 col-xl-4 d-flex align-items-stretch">
                     <div class="card mb-4">
-                        <img src="{{ $trip->img}}" class="card-img-top" alt="...">
+                        <img src="{{ $trip->img}}" class="card-img-top" alt="immagine di {{ $trip->description }}">
                         <div class="card-body">
                             <h3 class="card-title">{{ $trip->description }}</h3>
                             <p class="card-text"><span class="font-weight-bold">Price: </span>{{ $trip->price }}</p>
@@ -45,9 +45,9 @@
         <h2>Europa:</h2>
         <div class="row">
             @foreach ($TripsEurope as $trip)
-                <div class="col-6 d-flex align-items-stretch">
+                <div class="col-sm-12 col-md-6 col-xl-4 d-flex align-items-stretch">
                     <div class="card mb-5">
-                        <img src="{{ $trip->img}}" class="card-img-top" alt="...">
+                        <img src="{{ $trip->img}}" class="card-img-top" alt="immagine di {{ $trip->description }}">
                         <div class="card-body">
                             <h3 class="card-title">{{ $trip->description }}</h3>
                             <p class="card-text"><span class="font-weight-bold">Price: </span>{{ $trip->price }}</p>
