@@ -8,12 +8,27 @@
     <title>Laravel migration seeder</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            @foreach ($allTrips as $trip)
+                <div class="col-6">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ $trip->img}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $trip->description }}</h5>
+                                <p class="card-text"></p>
+                                <p class="card-text"><small class="text-muted"></small></p>
+                            </div>
+                        </div>
 
-    @foreach ($allTrips as $trip)
-    <div class="pack">
-        <h2>{{ $trip->description}}</h2>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+
     </div>
 
-    @endforeach
 </body>
 </html>
