@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <h3 class="card-title">{{ $trip->description }}</h3>
                             <p class="card-text"><span class="font-weight-bold">Price: </span>{{ $trip->price }}</p>
-                            <p class="card-text"><span class="font-weight-bold">Durata: </span>{{ $trip->durations }}</p>
+                            <p class="card-text"><span class="font-weight-bold">Durata: </span>{{ $trip->durations }} Giorni</p>
                             <p class="card-text"><span class="font-weight-bold">Partenza: </span>{{ $trip->departure }}</p>
                             <p class="card-text"><span class="font-weight-bold">Itinerario: </span>{{ $trip->itinerary }}</p>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="card-body">
                             <h3 class="card-title">{{ $trip->description }}</h3>
                             <p class="card-text"><span class="font-weight-bold">Price: </span>{{ $trip->price }}</p>
-                            <p class="card-text"><span class="font-weight-bold">Durata: </span>{{ $trip->durations }}</p>
+                            <p class="card-text"><span class="font-weight-bold">Durata: </span>{{ $trip->durations }} Giorni</p>
                             <p class="card-text"><span class="font-weight-bold">Partenza: </span>{{ $trip->departure }}</p>
                             <p class="card-text"><span class="font-weight-bold">Itinerario: </span>{{ $trip->itinerary }}</p>
                         </div>
