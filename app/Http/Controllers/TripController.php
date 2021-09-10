@@ -10,6 +10,7 @@ class TripController extends Controller
     public function index()
     {
         $allTrips = Trip::all();
-        return view('trip', compact('allTrips'));
+        $TripsEurope = Trip::where('continent', '=', 'Europa')->get();
+        return view('trip', compact('allTrips', 'TripsEurope'));
     }
 }
